@@ -1,14 +1,15 @@
 
-import './App.css'
+import "./App.css";
+import Navbar from "./component/navbar/navbar";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
- <h1>enter your name</h1>
+      <Navbar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
