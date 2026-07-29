@@ -205,7 +205,10 @@
     width: 45px;
     height: 45px;
   }
+#root{
+    margin :0%!important;
 
+}
   /* Desktop buttons hide */
   .desktopMenu {
     display: none;
