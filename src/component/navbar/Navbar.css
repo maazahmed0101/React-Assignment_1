@@ -1,247 +1,42 @@
-/* Default Settings */
-* {
-  margin: 0;
-  padding: 0;
+*{
+margin: 0%;
+padding: 0%;
+}
+/* html , body{
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
+} */
+body{
+  background-color: black;
 }
-
-.nav {
-  width: 100%;
-  height: 75px;
-  /* padding: 0 40px; */
-
+.mainNav{
+  background-color: pink;
+  padding: 10px;
   display: flex;
   align-items: center;
-  gap: 25px;
-
-  background-color: white;
 }
 
-
-.logo {
-  width: 110px;
-  height: 59px;
-  flex-shrink: 0;
-}
-
-.logo img {
+img{
   width: 100%;
-  height: 100%;
-
-  object-fit: contain;
+}
+.logoNav{
+width:100px;
+padding-right: 2vw;
+/* height: 1rem; */
+}
+.navbarr{
+height: 2.5rem!important;
+}
+.navbarr.Search{
+height: 2.3rem!important;
 }
 
-/* Search */
-.searchBox {
-  flex: 1;
-  max-width: 600px;
+.my-btn:hover .anticon {
+  color: red !important;
 }
 
-.searchBox input {
-  width: 100%;
-  padding: 12px 18px;
-
-  border: 1px solid #ccc;
-  border-radius: 25px;
-
-  outline: none;
-  font-size: 16px;
-}
-
-/* Desktop Menu */
-.desktopMenu {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.shopBtn,
-.loginBtn {
-  padding: 10px 22px;
-
-  border: none;
-  border-radius: 7px;
-
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.shopBtn {
-  background-color: red;
-}
-
-.loginBtn {
-  background-color: black;
-  color: white;
-}
-
-/* Mobile Menu Button */
-.menuBtn {
-  display: none;
-
-  border: none;
-  background: transparent;
-
-  font-size: 30px;
-  cursor: pointer;
-}
-
-/* Dark Overlay */
-.overlay {
-  position: fixed;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.5);
-
-  opacity: 0;
-  visibility: hidden;
-
-  transition: 0.3s;
-
-  z-index: 10;
-}
-
-.showOverlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Right Side Menu */
-.sideNavbar {
-  position: fixed;
-
-  top: 0;
-  right: 0;
-
-  width: 300px;
-  height: 100vh;
-
-  padding: 30px;
-
-  background-color: white;
-
-  /* Start me screen ke bahar */
-  transform: translateX(100%);
-
-  /* Right se left animation */
-  transition: transform 0.4s ease;
-
-  z-index: 20;
-}
-
-/* Menu Open */
-.sideNavbar.open {
-  transform: translateX(0);
-}
-
-/* Close Button */
-.closeBtn {
-  display: block;
-
-  margin-left: auto;
-
-  border: none;
-  background: transparent;
-
-  font-size: 35px;
-
-  cursor: pointer;
-}
-
-/* Menu Links */
-.sideMenu {
-  margin-top: 50px;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 25px;
-}
-
-.sideMenu a {
-  color: black;
-
-  font-size: 20px;
-
-  text-decoration: none;
-}
-
-.sideMenu a:hover {
-  color: #e91e63;
-}
-
-/* Login Button */
-.sideLoginBtn {
-  padding: 12px;
-
-  border: none;
-  border-radius: 7px;
-
-  background-color: black;
-  color: white;
-
-  font-size: 17px;
-
-  cursor: pointer;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-
-  .nav {
-    height: 65px;
-
-    padding: 0 15px;
-
-    gap: 12px;
-  }
-
-  .logo {
-    width: 45px;
-    height: 45px;
-  }
-#root{
-    margin :0%!important;
-
-}
-  /* Desktop buttons hide */
-  .desktopMenu {
-    display: none;
-  }
-
-  /* Menu button show */
-  .menuBtn {
-    display: block;
-  }
-
-  .searchBox {
-    flex: 1;
-  }
-
-  .searchBox input {
-    padding: 10px 13px;
-
-    font-size: 14px;
-  }
-
-  .sideNavbar {
-    width: 280px;
-  }
-}
-
-/* Small Mobile */
-@media screen and (max-width: 400px) {
-
-  .searchBox input {
-    width: 150px;
-  }
-
-  .sideNavbar {
-    width: 85%;
-  }
+.my-btn:active {
+  background-color: red !important;
+  border-color: red !important;
 }
