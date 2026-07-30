@@ -1,11 +1,14 @@
 import "./Navbar.css";
-import { ShoppingCartOutlined } from "@ant-design/icons";
-
+import { ShoppingCartOutlined , SunOutlined  } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { Input } from "antd";
-import { Button } from "antd";
+// import { Button } from "antd";
+import { useState } from "react";
 import bullLogo from "../../assets/logo.png";
 const Search = Input.Search;
 function Navbar() {
+  const [Islight , setIslight] = useState(false)
   return (
     <>
       <nav className="mainNav">
@@ -13,7 +16,6 @@ function Navbar() {
         <div className="logoNav">
           <img src={bullLogo} alt="Logo" />
         </div>
-
         {/* input */}
         <Search
           placeholder="enter some text"
@@ -21,8 +23,35 @@ function Navbar() {
           size="large"
         />
         {/* Button */}
-        <ShoppingCartOutlined />
-        <Button type="primary" style={{}} />
+        <ShoppingCartOutlined
+          style={{
+            fontSize: "30px",
+            color: "purple",
+            backgroundColor: "#1be7ff",
+            padding: "4px",
+            marginLeft: "2vw",
+            borderRadius: "7px",
+          }}
+        />
+        <FontAwesomeIcon
+          icon={faCircleUser}
+          style={{
+            fontSize: "30px",
+            marginLeft: "0.6vw",
+            backgroundColor: "#d8e2dc",
+            padding:'5px',
+            borderRadius:'7px',
+            color: "#ef476f",
+          }}
+        />
+        
+        <SunOutlined className="sunLight" style={{
+          fontSize:'30px',
+          marginLeft:'3.4vw',
+          color:Islight?'orange':'grey'
+        }}
+        onClick={()=>{setIslight(!Islight)}}
+        />
       </nav>
     </>
   );

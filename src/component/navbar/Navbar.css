@@ -1,6 +1,7 @@
 *{
 margin: 0%;
 padding: 0%;
+user-select: none;
 }
 /* html , body{
   width: 100%;
@@ -11,7 +12,7 @@ body{
   background-color: black;
 }
 .mainNav{
-  background-color: pink;
+  background-color: white;
   padding: 10px;
   display: flex;
   align-items: center;
