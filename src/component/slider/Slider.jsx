@@ -13,7 +13,7 @@ function Slider() {
     }, 1500);
 
     return () => clearInterval(timer);
-  }, []);
+  }, );
 
   return (
     <div className="slider">

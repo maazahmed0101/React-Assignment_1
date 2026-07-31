@@ -1,12 +1,12 @@
 import "./App.css";
 import Navbar from "./component/navbar/Navbar.jsx";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Slider from "./component/slider/Slider.jsx";
 function App() {
-  const [count, setcount] = useState(0);
-  useEffect(() => {
-    console.log("component is running");
-  }, []);
+  // const [count, setcount] = useState(0);
+  // useEffect(() => {
+  //   console.log("component is running");
+  // }, []);
   return (
     <>
       <Navbar />
